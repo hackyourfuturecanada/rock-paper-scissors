@@ -2,28 +2,34 @@
 
 These instructions were borrowed from [TheOdinProject](https://www.theodinproject.com/).
 
-### Introduction
+## Introduction
 
 We're going to make a simple implementation of the grade-school classic "rock paper scissors".  If you don't know what that is, check the [Wikipedia article](https://en.wikipedia.org/wiki/Rock%E2%80%93paper%E2%80%93scissors) or [this](https://www.wikihow.com/Play-Rock,-Paper,-Scissors) step-by-step.  
 
 For the moment we're just going to play the game from the browser console. In the future, we'll look at adding a front-end!
 
-### Assignment
+### Project files
 
 We'll use JavaScript in the browser for this assignment, so your workflow will be slightly different from how we've used JavaScript previously. 
- 
-This repo contains an `index.html` file that includes an external JavaScript file, `game.js`. It's similar to how we've included external CSS files to our HTML pages. If you want to learn more about adding JavaScript to your page, check out [this link](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript#How_do_you_add_JavaScript_to_your_page).
 
-Your game is going to be played completely from the console, so don't worry about putting anything else in `index.html`. Add all of your JavaScript code to `game.js`. 
+* **index.html**
+  - Blank HTML file that includes an external JavaScript file, `game.js`
+  - If you want to learn more about including JavaScript to your page, check out [this link](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript#How_do_you_add_JavaScript_to_your_page)
 
-#### Working with JavaScript in the browser 
-Make changes to the `game.js` file and save them. I've just added a "Hello, world!" console.log statement.
+* **game.js**
+  - Add all of your JavaScript code here!
+
+Your game is going to be played completely from the console, so don't worry about putting anything else in `index.html`.
+
+### Working with JavaScript in the browser 
+
+Make changes to `game.js` and save them. I've just added a "Hello, world!" `console.log` statement.
 
 Open up `index.html` in a web browser and then open up the browser’s console by right-clicking on the blank webpage and selecting “Inspect” or “Inspect Element”. 
 
 In the ‘Developer Tools’ pane find and select the ‘Console’ tab, where you should see the output of `game.js`.
 
-#### Instructions
+### Assignment instructions
 1. Your game is going to play against the computer, so begin with a function called `computerPlay` that will randomly return either 'Rock', 'Paper' or 'Scissors'.  We'll use this function in the game to make the computer's play.
 2. Write a function that plays a single round of Rock Paper Scissors.  The function should take two parameters - the `playerSelection` and `computerSelection` - and then return a string that declares the winner of the round like so: `"You Lose! Paper beats Rock"`
    1. Make your function case insensitive (so users can input `rock`, `ROCK`, `RocK` or any other variation)
