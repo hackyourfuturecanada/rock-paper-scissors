@@ -52,3 +52,18 @@ In the ‘Developer Tools’ pane find and select the ‘Console’ tab, where y
    2. Use `prompt()` to get input from the user. [Read the docs here if you need to.](https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt)
    3. Feel free to re-work your previous functions if you need to.  Specifically, you might want to change the return value to something more useful.
    4. Feel free to create more "helper" functions if you think it would be useful.
+   
+## Part 2: Now with the DOM!
+
+1. Copy your original code into a new file so you don’t lose it. Alternatively, create a new branch for your changes. Replace `<your_branch_name>` with the name of your branch.
+```
+git checkout -b <your_branch_name>
+```
+
+2. For now, remove the logic that plays exactly five rounds.
+3. Create three buttons, one for each selection. Add an event listener to the buttons that calls your `playRound` function with the correct `playerSelection` every time a button is clicked. (you can keep the console.logs for this step)
+4. Add a div for displaying results and change all of your console.logs into DOM methods.
+5. Display the running score, and announce a winner of the game once one player reaches 5 points.
+6. You will likely have to refactor (rework/rewrite) your original code to make it work for this. That’s OK! Reworking old code is an important part of the programmer’s life.
+7. Update your CSS and add some style to your game. Have fun with it!
+8. When you submit a pull request, make sure you use the branch that you worked on instead of `master`.
