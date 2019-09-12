@@ -63,8 +63,10 @@ In the ‘Developer Tools’ pane find and select the ‘Console’ tab, where y
 ```
 git checkout -b <your_branch_name>
 ```
-You will commit and push to this branch just like how you've been working previously. Creating a new branch means that you won't lose the work you did for part 1 (the work you did for part 1 will still exist on the branch you've been using before).
+You will commit and push to this branch just like how you've been working previously. Creating a new branch means that you won't lose the work you did for part 1 (the work you did for part 1 will still exist on the branch you've been using before). 
+
 2. For now, remove the logic that plays exactly five rounds.
+
 3. Create three buttons, one for each selection. Add an event listener to the buttons that calls your `playRound` function with the correct `playerSelection` every time a button is clicked. (you can keep the console.logs for this step)
 4. Add a div for displaying results and change all of your console.logs into DOM methods.
 5. Display the running score, and announce a winner of the game once one player reaches 5 points.
