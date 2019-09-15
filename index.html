@@ -3,8 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <title>Rock, Paper, Scissors!</title>
-    <script src="game.js" defer></script>
+    <script src="js/game.js" defer></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+    <div id="rounds">
+        <h2>Rounds :</h2>
+        <ul id="rounds-list">
+
+        </ul>
+    </div>
+
+    <div class="container">
+
+        <div class="score">
+            <div id="player">
+                YOU :
+                <span>0</span>
+            </div>
+
+            <div id="result">
+
+            </div>
+
+            <div id="computer">
+                COUMPUTER :
+                <span>0</span>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button id="rock"><i class="fab fa-cloudversify fa-9x"></i></button>
+            <button id="paper"><i class="fas fa-leaf fa-9x"></i></button>
+            <button id="scissors"><i class="fas fa-cut fa-9x"></i></button>
+        </div>
+
+        <div class="arena">
+            <div id="player-choice">
+                <img src="https://i.pinimg.com/originals/7c/c7/a6/7cc7a630624d20f7797cb4c8e93c09c1.png" alt="">
+            </div>
+            <div> VS </div>
+            <div id="computer-choice">
+                <img src="https://image.flaticon.com/icons/svg/2098/2098147.svg" alt="">
+            </div>
+        </div>
+
+
+
+
+    </div>
 </body>
 </html>
