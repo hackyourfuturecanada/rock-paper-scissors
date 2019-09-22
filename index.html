@@ -1,10 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script type="index/javascri">
+
+  </script>
     <meta charset="UTF-8">
     <title>Rock, Paper, Scissors!</title>
     <script src="game.js" defer></script>
+    <style media="screen">
+      body{
+
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjtSXG8POHnpEsElyE3ZQwVWHw44yJ7BYwuALw9385d9rafMqh");
+      }
+      h1, h2{
+        text-align: center;
+        color: white;
+      }
+      div{
+        padding: 30px;
+
+      }
+      .button{
+        text-align: center;
+        background-color: rgba(100, 88, 158, 0.2);
+      }
+      button{
+          padding: 30px;
+          text-align: center;
+          margin: 10px;
+          font-size: 10px;
+          border-radius: 10px;
+          font-weight: bold;
+          background-color: white;
+      }
+      img{
+        width: 80px;
+      }
+      .score {
+        height: auto;
+        margin: 1px;
+        padding: 1px;
+        background-color: rgba(191, 185, 182, 0.8);
+        font-size: 13px;
+        text-align: center;
+        font-weight: bold;
+
+      }
+      .result{
+
+       height: auto;
+       margin: 5px;
+       padding: 5px;
+       background-color: rgb(141, 110, 57);
+
+      }
+
+
+    </style>
 </head>
 <body>
+  <h1>Rock, Paper, Scissors! Game... </h1>
+  <h2> Click on your Choise Below!! </h2>
+  <div class="button">
+    <button id="rock" type="button" name="Rock"><img src = "https://static.thenounproject.com/png/477918-200.png"></button>
+    <button id="paper" type="button" name="Paper"><img src = "https://static.thenounproject.com/png/477922-200.png"></button>
+    <button id="scissors" type="button" name="Scissors"><img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd98LEAPVyUJ9FviL1yMPC5U9_qr0fNKUtvvvRTO1Nkmrxs4_7"></button>
+  </div>
+
+  <div id="score" class="score">
+  <h2>The Record of rounds..</h2>
+  </div>
+
+  <div id="result">
+    <h2> The result ...!   </h2>
+  </div>
+
+
 </body>
 </html>
