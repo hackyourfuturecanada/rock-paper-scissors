@@ -2,6 +2,9 @@
 
 These instructions were borrowed from [TheOdinProject](https://www.theodinproject.com/).
 
+## Updates
+[Click here for Part 2](#part-2) - **due Wednesday, September 18 at 11:59 p.m.**
+
 ## Introduction
 
 We're going to make a simple implementation of the grade-school classic "rock paper scissors".  If you don't know what that is, check the [Wikipedia article](https://en.wikipedia.org/wiki/Rock%E2%80%93paper%E2%80%93scissors) or [this](https://www.wikihow.com/Play-Rock,-Paper,-Scissors) step-by-step.  
@@ -52,3 +55,21 @@ In the ‘Developer Tools’ pane find and select the ‘Console’ tab, where y
    2. Use `prompt()` to get input from the user. [Read the docs here if you need to.](https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt)
    3. Feel free to re-work your previous functions if you need to.  Specifically, you might want to change the return value to something more useful.
    4. Feel free to create more "helper" functions if you think it would be useful.
+   
+## Part 2
+**Now with the DOM!**
+
+1. Create a new branch for part 2. Replace `<your_branch_name>` with the name of your branch.
+```
+git checkout -b <your_branch_name>
+```
+You will commit and push to this branch just like how you've been working previously. Creating a new branch means that you won't lose the work you did for part 1 (the work you did for part 1 will still exist on the branch you've been using before). 
+
+2. For now, remove the logic that plays exactly five rounds.
+
+3. Create three buttons, one for each selection. Add an event listener to the buttons that calls your `playRound` function with the correct `playerSelection` every time a button is clicked. (you can keep the console.logs for this step)
+4. Add a div for displaying results and change all of your console.logs into DOM methods.
+5. Display the running score, and announce a winner of the game once one player reaches 5 points.
+6. You will likely have to refactor (rework/rewrite) your original code to make it work for this. That’s OK! Reworking old code is an important part of the programmer’s life.
+7. Update your CSS and add some style to your game. Have fun with it!
+8. When you submit a pull request, make sure you use the branch that you worked on instead of `master` (the branch created in step 1).
