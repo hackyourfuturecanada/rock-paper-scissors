@@ -1,0 +1,37 @@
+.home {
+  width: 50vw;
+  margin: auto;
+}
+
+.playingArea {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.buttons {
+  height: 100px;
+  margin: auto;
+  width: 30%;
+  justify-content: center;
+  border-radius: 10px;
+  background: #700cee;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.title {
+  text-align: center;
+  padding: 10px;
+  color: #212121;
+}
+
+.result {
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
