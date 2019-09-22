@@ -1,10 +1,9 @@
 const arr = ['rock', 'paper', 'scissors'];
-const computerPlay = () => arr[Math.floor(Math.random() * 3)];
 
+const computerPlay = () => arr[Math.floor(Math.random() * 3)];
+let theParent = document.querySelector('#buttons');
 const whoIsTheWinner = (result, playerSelection, computerSelection) => {
-  if (result === undefined) {
-    return 'You have to select one of these: Rock, paper, scissors';
-  } else if (result === true) {
+  if (result === true) {
     return (
       'Player => ' +
       playerSelection +
@@ -44,9 +43,7 @@ const playRound = (player, computer) => {
   let playerSelectionIndex = arr.indexOf(player);
   let computerSelectionIndex = arr.indexOf(computer);
 
-  if (playerSelectionIndex < 0) {
-    return undefined;
-  } else if (playerSelectionIndex === computerSelectionIndex) {
+  if (playerSelectionIndex === computerSelectionIndex) {
     return null;
   } else if (playerSelectionIndex > 0 && computerSelectionIndex > 0) {
     if (playerSelectionIndex > computerSelectionIndex) {
@@ -60,28 +57,38 @@ const playRound = (player, computer) => {
   }
 };
 
-// console.log(whoIsTheWinner(playRound(playerSelection, computerSelection)));
+//
 
 const game = () => {
   let playerScore = 0;
   let computerScore = 0;
-  let numberOfGames = 5;
+  // let numberOfGames = 5;
+  let computerSelection = computerPlay();
+  let playerSelection;
 
-  while (numberOfGames > 0) {
-    let computerSelection = computerPlay();
-    let playerSelection = computerPlay();
-
-    let result = playRound(playerSelection, computerSelection);
-    if (result === true) {
-      playerScore++;
-      console.log(whoIsTheWinner(result, playerSelection, computerSelection));
-    } else if (result === false) {
-      computerScore++;
-      console.log(whoIsTheWinner(result, playerSelection, computerSelection));
-    } else {
-      console.log(whoIsTheWinner(result, playerSelection, computerSelection));
+  theParent.addEventListener('click', e => {
+    let clickedItem;
+    if (e.target !== e.currentTarget) {
+      clickedItem = e.target.id;
     }
-    numberOfGames--;
+    playerSelection = clickedItem;
+    e.stopPropagation;
+  });
+
+  // console.log(playerSelection);
+
+  // if (!(playerScore === 5 || computerScore === 5)) {
+  let result = playRound(playerSelection, computerSelection);
+  if (result === true) {
+    playerScore++;
+    console.log(whoIsTheWinner(result, playerSelection, computerSelection));
+  } else if (result === false) {
+    computerScore++;
+    console.log(whoIsTheWinner(result, playerSelection, computerSelection));
+  } else {
+    console.log(whoIsTheWinner(result, playerSelection, computerSelection));
+
+    // numberOfGames--;
   }
 
   if (playerScore === computerScore) {
