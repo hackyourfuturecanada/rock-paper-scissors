@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alegreya|Cardo|Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#header {
+  background-color:  rgb(179, 0, 0);
+  font-size: 100px;
+  margin: 10px;
+}
+
+#do-it-message{
+  font-size: 35px;
+  text-align: center;
+  color: rgb(0, 204, 204);
+  font-family: 'Permanent Marker', cursive;
+}
+
+header > h1 {
+  color: black;
+  text-align: center;
+font-family: 'Bangers', cursive;
+}
+
+.scoreBoard {
+  margin: 22px auto;
+  border: 3px solid black;
+  text-align: center;
+  width: 300px;
+  color: rgb(0, 102, 102);
+  font-size: 30px;
+  padding: 15px 20px;
+  font-family:'Permanent Marker', cursive;
+font-family: 'Alegreya', serif;
+font-family: 'Cardo', serif;
+}
+
+#p{
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  color: rgb(179, 0, 0);
+
+}
+.choices{
+  text-align: center;
+  margin: 50px 0;
+}
+
+img {
+  width: 300px;
+}
+
+.choice{
+  border-radius: 50%;
+  margin: 0 20px;
+  padding: 10px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+.choice:hover{
+curser: pointer;
+background-color: rgb(179, 0, 0);
+}
