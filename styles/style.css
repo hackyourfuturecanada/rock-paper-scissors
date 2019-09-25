@@ -1,0 +1,147 @@
+/* First setting */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    align-content: stretch;
+    justify-content: stretch;
+    height: 100vh;
+    width: 100%;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border-right: 5px solid #818a91;
+    
+}
+.left-box{
+    width: 100%;
+    height: 25%;
+    text-align: center;
+}
+.lbox1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    background-color: #818a91;
+    color: #ffffff;
+    border-right: 5px solid #ffffff;
+}
+
+.fas{
+    color: red;
+    font-size: 100px;
+}
+.fa-hand-rock{
+    color: #F3D250;
+}
+.fa-hand-paper{
+    color:  #90CCF4;
+}
+.fa-hand-scissors{
+    color: #F76C6C;
+}
+.fa-hand-rock:hover{
+    cursor: pointer;
+    background-color: #F3D250;
+    color: #ffffff;
+    font-size: 120px;
+    padding: 30px;
+}
+.fa-hand-paper:hover{
+    cursor: pointer;
+    background-color: #90CCF4;
+    color: #ffffff;
+    font-size: 120px;
+    padding: 30px;
+}
+.fa-hand-scissors:hover{
+    cursor: pointer;
+    background-color: #F76C6C;
+    color: #ffffff;
+    font-size: 120px;
+    padding: 30px;
+}
+.right{
+    width: 50%;
+}
+.right-box{
+    width: 100%;
+    height: 25%;
+    text-align: center;
+}
+.rbox1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    background-color: #818a91;
+    color: #ffffff;
+    border-left: 5px solid #ffffff;
+
+}
+.score{
+    color: #000 !important;
+    font-size: 20px;
+
+}
+.rbox2{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 40px;
+    
+}
+.rbox2 .score{
+    color: #6638f0;
+}
+.rbox3 .score{
+    color: #72BDA3;
+}
+.your-score {
+    margin-top: 50px;
+}
+.your-span{
+    font-size: 30px;
+    color:#ffffff;
+    background-color: #6638f0;
+    padding: 20px 30px;
+}
+.computer-score {
+    margin-top: 50px;
+}
+
+.computer-span{
+    font-size: 30px;
+    color:#ffffff;
+    background-color: #72BDA3;
+    padding: 20px 30px;
+}
+.rbox3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    padding: 30px;
+    color: tomato;
+}
+
+.restart-button{
+    display: none;
+    font-size: 30px;
+    color: #fff;
+    background-color: tomato;
+    padding: 30px;
+    margin: 20px 40px;
+}
+.restart-button:hover{
+    cursor: pointer;
+    font-size: 32px;
+    background-color: #F76C6C;
+}
